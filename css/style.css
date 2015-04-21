@@ -616,15 +616,15 @@ a:focus {
 }
 
 .services-content1 {
-	background: #82bc69;
+	background: #683520;
 }
 
 .services-content2 {
-	background: #e7966e;
+	background: #B18965;
 }
 
 .services-content3 {
-	background: #e4dd8a;
+	background: #D5C1A9;
 }
 
 .services-content i {
@@ -680,7 +680,7 @@ a:focus {
 
 .resume-content h5 {
 	background: #fff;
-	color: #6BAC68;
+	color: #866633;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
