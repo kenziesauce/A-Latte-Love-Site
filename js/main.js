@@ -117,6 +117,9 @@ $(document).ready(function() {
 
 });
 
+
+
+
 // Isotope
 $(window).load(function() {
     "use strict";
@@ -149,3 +152,4 @@ $(window).load(function() {
         return false;
     });
 });
+
