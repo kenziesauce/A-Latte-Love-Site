@@ -12,15 +12,8 @@
 
 	<title>A Latte Love</title>
 
+			<!-- Mobile Metas -->>
 
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
-
-
-	<!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Favicon -->
@@ -34,6 +27,7 @@
 	<link rel="stylesheet" href="js/owl-carousel/owl.theme.css"/>
 	<link rel="stylesheet" href="js/owl-carousel/owl.transitions.css"/>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
 
 	<!-- Google Font & Icon Fonts -->
 	<link href="css/ico/style.css" rel="stylesheet">
@@ -75,7 +69,7 @@
 			<li><a href="index.html#works" class="page-scroll">Reviews <i class="fa fa-angle-right"></i></a></li>
 			<!--<li><a href="index.html#featured" class="page-scroll">Featured Works <i class="fa fa-angle-right"></i></a></li>-->
 			<!--<li><a href="index.html#blog" class="page-scroll">Blog <i class="fa fa-angle-right"></i></a></li>-->
-			<li><a href="index.html#contact-wrap" class="page-scroll">Contact <i class="fa fa-angle-right"></i></a></li>
+			<!--<li><a href="index.html#contact-wrap" class="page-scroll">Contact <i class="fa fa-angle-right"></i></a></li>-->
 		</ul>
 	</nav>
 
@@ -100,7 +94,7 @@
 							<div class="row about-me">
 								<div class="col-md-5">
 
-
+										<!--popup modal-->
 									<body onLoad="$('#my-modal').modal('show');">
 									<div id="my-modal" class="modal fade">
 										<div class="modal-dialog">
@@ -169,50 +163,11 @@
 							</div>
 							<div class="row">
 
-								<!--&lt;!&ndash; Skills &ndash;&gt;-->
-								<!--<div class="col-md-3 skills-wrap">-->
-									<!--<h5><span>Skills</span></h5>-->
-									<!--<ul class="skills" id="skills">-->
-										<!--<li>-->
-											<!--<h6>Photoshop</h6>-->
-											<!--<div class="skill-bar skill-anim"><span style="width:70%"></span></div>-->
-										<!--</li>-->
-										<!--<li>-->
-											<!--<h6>Illustrator</h6>-->
-											<!--<div class="skill-bar skill-anim"><span style="width:80%"></span></div>-->
-										<!--</li>-->
-										<!--<li>-->
-											<!--<h6>HTML5</h6>-->
-											<!--<div class="skill-bar skill-anim"><span style="width:50%"></span></div>-->
-										<!--</li>-->
-										<!--<li>-->
-											<!--<h6>Javascript</h6>-->
-											<!--<div class="skill-bar skill-anim"><span style="width:65%"></span></div>-->
-										<!--</li>-->
-									<!--</ul>-->
-								<!--</div>-->
-
 								<!-- Stats -->
 								<div class="col-md-9">
 									<div id="stats">
-										<!--<ul class="stats">-->
-											<!--<li>-->
-												<!--<i class="icon-trophy"></i>-->
-												<!--<h4><span class="stat1">50</span>Awards Won</h4>-->
-											<!--</li>-->
-											<!--<li>-->
-												<!--<i class="icon-users"></i>-->
-												<!--<h4><span class="stat2">150</span>Client works</h4>-->
-											<!--</li>-->
-											<!--<li>-->
-												<!--<i class="icon-chart"></i>-->
-												<!--<h4><span class="stat3">400</span>Projects</h4>-->
-											<!--</li>-->
-											<!--<li>-->
-												<!--<i class="icon-write"></i>-->
-												<!--<h4><span class="stat4">250</span>Blogposts</h4>-->
-											<!--</li>-->
-										<!--</ul>-->
+
+
 										<ul class="social">
 											<li><a href="index.html#" class="fa fa-twitter"></a></li>
 											<li><a href="index.html#" class="fa fa-facebook"></a></li>
@@ -232,83 +187,103 @@
 			</div>
 		</div>
 
-			<!-- Survey -->
+		<!-- Survey -->
 		<div id="services">
 			<div class="service-content">
 				<div class="container">
 					<div class="row">
 						<div class="content-head content-head-lite">
-							<h2>We've got a question.... <span>Tell us what you think about coffee, our site, and your view of comfy chairs.</span></h2>
+							<h2>Can we talk ? <span class="survey-text">Tell us what you think about coffee, our site, and your view of comfy chairs.</span></h2>
 						</div>
-						<div class="col-md-8 col-sm-7">
-						<div class="contact-info">
-							<form id="contact" name="contact" method="post" novalidate="novalidate">
-								<div class="col-md-5">
-									<div class="input-wrap">
-										<input type="radio" name="name" id="name" placeholder="How do you take your coffee?" required="">
-										<label class="radio-inline">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Black
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Cream
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Sugar
-										</label>
-										<label class="radio-inline">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3"> Cream & Sugar
-										</label>
+						<div class="conatiner survey-text">
+							<form id="survey" name="survey" method="post" class="form-horizontal">
+								<div class="form-group">
+									<label class="survey-label">How do you prefer your coffee?</label>
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="prefer1" value="Black"> Black
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="prefer2" value="Cream"> Cream
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="prefer3" value="Sugar"> Sugar
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="prefer4" value="Cream & Sugar"> Cream & Sugar
+									</label>
+								</div>
 
-									</div>
-									<div class="input-wrap">
-										<input type="email" name="email" id="email" placeholder="Email Address" required="">
-									</div>
-									<div class="input-wrap">
-										<input type="text" name="subject" id="subject" placeholder="Subject" required="">
-									</div>
+								<div class="form-group">
+									<label class="survey-label">How many cups of coffee per day?</label>
+									<label>
+										<select class="form-control input-sm" id="cupsSelector" style="width: 60px;">
+											<option value="1">1</option>
+											<option value="2" selected>2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</label>
 								</div>
-								<div class="col-md-7">
-									<div class="input-wrap">
-										<textarea placeholder="Message" name="message" id="message" required=""></textarea>
-									</div>
+								<div class="form-group">
+									<label class="survey-label">Do you ever buy coffee from 7-11 ?</label>
+									<label class="checkbox-inline">
+										<input type="checkbox" name="chkMybox" value="1">Yes
+									</label>
+									<label class="checkbox-inline">
+										<input type="checkbox" name="chkMybox" value="0">Hell NO!
+									</label>
 								</div>
-								<button id="submit" type="submit"><i class="icon-location"></i> Send</button>
+								<div class="form-group form-inline">
+									<label for="fname" class="survey-label">First Name:</label>
+									<input type="text" class="form-control input-sm input-sm" id="fname" placeholder="jane">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<label for="lname" class="survey-label">Last Name:</label>
+									<input type="text" class="form-control input-sm input-sm" id="lname" placeholder="doe">
+								</div>
+								<div class="form-group">
+									<label for="inputEmail3" class="survey-label">Email</label>
+									<input type="email" class="form-control input-sm input-sm" id="inputEmail3" placeholder="email">
+								</div>
+								<div class="form-group">
+									<label for="comments" class="survey-label">Comments:</label>
+									<textarea class="form-control input-sm" rows="3"  placeholder="type anything youi want..."></textarea>
+								</div>
+								<!-- <button id="submit" type="submit" class="MyButton"><i class="icon-location"></i> Rock that Form!</button>-->
+								<!-- Button trigger modal -->
+								<button type="submit" id="submit" class="btn btn-primary btn-lg MyButton" data-toggle="modal" data-target="#myModal"> Rock that Form!</button>
 							</form>
-							<div id="success">
-								<div>
-									<p><i class="icon-circle-check"></i> Your message was sent successfully! I will be in touch as soon as I can.</p>
+							<!--<div id="success">
+								<!--<div>
+									<p class="okThanks"><i class="icon-circle-check"></i> Your Survey was sent successfully! Thank you.</p>
+								</div>-->
+							<!-- ******** Added Modal ********** -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+										</div>
+										<div class="modal-body">
+											<div id="surveyAnswers">
+
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+										</div>
+									</div>
 								</div>
 							</div>
+							<!--</div>-->
 
 							<div id="error">
 								<div>
-									<p><i class="icon-circle-cross"></i> Something went wrong, try refreshing and submitting the form again.</p>
+									<p><i class="icon-circle-cross"></i> Something went wrong, try refreshing and submitting the survey again.</p>
 								</div>
 							</div>
 						</div>
-					</div>
-						<!--<div class="clearfix"></div>-->
-						<!--<div class="col-md-4 col-sm-6">-->
-							<!--<div class="services-content services-content1">-->
-								<!--<i class="icon-uni16E"></i>-->
-								<!--<h4>Web Development</h4>-->
-								<!--<p>In quis risus at nisi sodales rutrum quam est tempus id sem non dapibus ligula id orci erat eu urna sodales condi mentum.</p>-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--<div class="col-md-4 col-sm-6">-->
-							<!--<div class="services-content services-content2">-->
-								<!--<i class="icon-uniE094"></i>-->
-								<!--<h4>Social Sharing</h4>-->
-								<!--<p>In quis risus at nisi sodales rutrum quam est tempus id sem non dapibus ligula id orci erat eu urna sodales condi mentum.</p>-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--<div class="col-md-4 col-sm-12">-->
-							<!--<div class="services-content services-content3">-->
-								<!--<i class="icon-uni17F"></i>-->
-								<!--<h4>Customer Support</h4>-->
-								<!--<p>In quis risus at nisi sodales rutrum quam est tempus id sem non dapibus ligula id orci erat eu urna sodales condi mentum.</p>-->
-							<!--</div>-->
-						<!--</div>-->
 					</div>
 				</div>
 			</div>
@@ -375,43 +350,7 @@
 										</div>
 									</div>
 								</div>
-								<!--<div class="col-md-6">-->
-									<!--<h5><i class="icon-book"></i> Education</h5>-->
-									<!--<ul>-->
-										<!--<li>-->
-											<!--<h3>Master of Fine Arts</h3>-->
-											<!--<h4>Design University <span>[ 2010 - 2012 ]</span></h4>-->
-											<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis. Mauris in erat augue. Fusce sed pretium erat, sit amet elementum ipsum. Nullam molestie libero ut arcu suscipit sodales.</p>-->
-										<!--</li>-->
-										<!--<li>-->
-											<!--<h3>Bachelor of Fine Arts</h3>-->
-											<!--<h4>Design University <span>[ 2008 - 2010 ]</span></h4>-->
-											<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis. Mauris in erat augue. Fusce sed pretium erat, sit amet elementum ipsum. Nullam molestie libero ut arcu suscipit sodales.</p>-->
-										<!--</li>-->
-										<!--<li>-->
-											<!--<h3>Diploma of Fine Arts</h3>-->
-											<!--<h4>Design University <span>[ 2007 - 2008 ]</span></h4>-->
-											<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis. Mauris in erat augue. Fusce sed pretium erat, sit amet elementum ipsum. Nullam molestie libero ut arcu suscipit sodales.</p>-->
-										<!--</li>-->
-									<!--</ul>-->
-								<!--</div>-->
 
-								<!-- Experience -->
-								<!--<div class="col-md-6">-->
-									<!--<h5><i class="fa fa-briefcase"></i> Experience</h5>-->
-									<!--<ul>-->
-										<!--<li>-->
-											<!--<h3>Design Corporation</h3>-->
-											<!--<h4>UX Developer<span>[ 2013 - 2014 ]</span></h4>-->
-											<!--<p>Lorem ipsum dolor sit amet consec tetur adipi scing elit nunc eget lectus a dolor imperdiet iaculis erat augue sed pretium erat sit amet elementum ipsum molestie libero ut arcu suscipit sodales.</p>-->
-										<!--</li>-->
-										<!--<li>-->
-											<!--<h3>Creative Design Studio</h3>-->
-											<!--<h4>Developer<span>[ 2014 - Present ]</span></h4>-->
-											<!--<p>Lorem ipsum dolor sit amet consec tetur adipi scing elit nunc eget lectus a dolor imperdiet iaculis erat augue sed pretium erat sit amet elementum ipsum molestie libero ut arcu suscipit sodales.</p>-->
-										<!--</li>-->
-									<!--</ul>-->
-								<!--</div>-->
 							</div>
 						</div>
 					</div>
@@ -550,109 +489,6 @@
 			</div>
 		</div>
 
-		<!--&lt;!&ndash; Call to action &ndash;&gt;-->
-		<!--<div id="cta-wrap">-->
-			<!--<div class="container">-->
-				<!--<div class="row">-->
-					<!--<div class="col-md-12">-->
-						<!--<h3>Have a Project? Like to work with us</h3>-->
-						<!--<a href="index.html#contact" class="page-scroll">Contact us</a>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
-
-		<!--&lt;!&ndash; Featured Works &ndash;&gt;-->
-		<!--<div id="featured">-->
-			<!--<div class="container">-->
-				<!--<div class="row">-->
-					<!--<div class="col-md-12">-->
-						<!--<div class="content-head content-head-lite">-->
-							<!--<h2>Featured Works <span>Lorem ipsum dolor sit amet adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis. Mauris in erat augue. Fusce sed pretium erat, sit amet elementum ipsum.</span></h2>-->
-						<!--</div>-->
-						<!--<div class="row">-->
-							<!--<div id="featured-works" class="owl-carousel owl-theme">-->
-								<!--<div class="item">-->
-									<!--<div class="col-md-6">-->
-										<!--<img src="images/xtra/1.png" class="img-responsive" alt=""/>-->
-									<!--</div>-->
-									<!--<div class="col-md-6">-->
-										<!--<div class="project-info">-->
-											<!--<h3>New Project</h3>-->
-											<!--<p>Aenean accumsan tincidunt augue elementum tortor faucibus at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean faucibus enim ac sem pulvinar eleifend. Quisque ultrices dignissim risus sed egestas. Aliquam laoreet elit ut risus hendrerit ornare. Morbi ut auctor lorem, at malesuada purus. Morbi viverra diam orci, non porta nisi rhoncus non. In aliquet egestas mi at ullamcorper sem pulvinar.</p>-->
-											<!--<ul class="project-meta">-->
-												<!--<li><span>Category :</span> Graphic Design</li>-->
-												<!--<li><span>Skills :</span> Photoshop, Illustrator</li>-->
-											<!--</ul>-->
-											<!--<a href="index.html#">Project Link</a>-->
-										<!--</div>-->
-									<!--</div>-->
-								<!--</div>-->
-								<!--<div class="item">-->
-									<!--<div class="col-md-6">-->
-										<!--<img src="images/xtra/2.png" class="img-responsive" alt=""/>-->
-									<!--</div>-->
-									<!--<div class="col-md-6">-->
-										<!--<div class="project-info">-->
-											<!--<h3>Illustrator Project</h3>-->
-											<!--<p>Aenean accumsan tincidunt augue elementum tortor faucibus at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean faucibus enim ac sem pulvinar eleifend. Quisque ultrices dignissim risus sed egestas. Aliquam laoreet elit ut risus hendrerit ornare. Morbi ut auctor lorem, at malesuada purus. Morbi viverra diam orci, non porta nisi rhoncus non. In aliquet egestas mi at ullamcorper.</p>-->
-											<!--<ul class="project-meta">-->
-												<!--<li><span>Category</span> Graphic Design</li>-->
-												<!--<li><span>Skills</span> Photoshop, Illustrator</li>-->
-											<!--</ul>-->
-											<!--<a href="index.html#">Project Link</a>-->
-										<!--</div>-->
-									<!--</div>-->
-								<!--</div>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
-
-		<!--&lt;!&ndash; Blog &ndash;&gt;-->
-		<!--<div id="blog">-->
-			<!--<div class="container">-->
-				<!--<div class="row">-->
-					<!--<div class="col-md-12">-->
-						<!--<div class="content-head content-head-lite">-->
-							<!--<h2>Latest news <span>Lorem ipsum dolor sit amet adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis. Mauris in erat augue. Fusce sed pretium erat, sit amet elementum ipsum.</span></h2>-->
-						<!--</div>-->
-						<!--<div class="row">-->
-							<!--<div class="col-md-3 col-sm-6 blog-content">-->
-								<!--<img src="images/blog/1.jpg" class="img-responsive" alt=""/>-->
-								<!--<h4><a href="index.html#">The old typewriter</a></h4>-->
-								<!--<div class="post-meta"><span><i class="icon-head"></i> Admin</span> <span><i class="icon-speech-bubble"></i> 2 Comments</span></div>-->
-								<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis.</p>-->
-								<!--<a href="index.html#" class="rmore">Read More <i class="icon-arrow-right"></i></a>-->
-							<!--</div>-->
-							<!--<div class="col-md-3 col-sm-6 blog-content">-->
-								<!--<img src="images/blog/2.jpg" class="img-responsive" alt=""/>-->
-								<!--<h4><a href="index.html#">Time is everything</a></h4>-->
-								<!--<div class="post-meta"><span><i class="icon-head"></i> Admin</span> <span><i class="icon-speech-bubble"></i> 2 Comments</span></div>-->
-								<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis.</p>-->
-								<!--<a href="index.html#" class="rmore">Read More <i class="icon-arrow-right"></i></a>-->
-							<!--</div>-->
-							<!--<div class="col-md-3 col-sm-6 blog-content">-->
-								<!--<img src="images/blog/3.jpg" class="img-responsive" alt=""/>-->
-								<!--<h4><a href="index.html#">Girl with book</a></h4>-->
-								<!--<div class="post-meta"><span><i class="icon-head"></i> Admin</span> <span><i class="icon-speech-bubble"></i> 2 Comments</span></div>-->
-								<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis.</p>-->
-								<!--<a href="index.html#" class="rmore">Read More <i class="icon-arrow-right"></i></a>-->
-							<!--</div>-->
-							<!--<div class="col-md-3 col-sm-6 blog-content">-->
-								<!--<img src="images/blog/4.jpg" class="img-responsive" alt=""/>-->
-								<!--<h4><a href="index.html#">Colorful sea urchins</a></h4>-->
-								<!--<div class="post-meta"><span><i class="icon-head"></i> Admin</span> <span><i class="icon-speech-bubble"></i> 2 Comments</span></div>-->
-								<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis.</p>-->
-								<!--<a href="index.html#" class="rmore">Read More <i class="icon-arrow-right"></i></a>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
 
 		<!-- Contact -->
 		<div id="contact-wrap">
@@ -730,6 +566,7 @@
 <script src="js/owl-carousel/owl.carousel.js"></script>
 <script src="js/plugin.js"></script>
 <script src="js/main.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>

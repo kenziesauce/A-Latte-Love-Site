@@ -64,7 +64,7 @@ $(document).ready(function() {
         accX: 0,
         accY: -200
     });
-		
+
     // Validate contact form
     $('#contact').validate({
         rules: {
@@ -107,13 +107,18 @@ $(document).ready(function() {
                     });
                 },
                 error: function() {
-					$('#success').fadeIn();
-					console.log("main.js and here");
-                },				
+                    $('#contact').fadeTo("slow", 0.15, function() {
+                        $('#error').fadeIn();
+                    });
+                }
             });
         }
     });
+
 });
+
+
+
 
 // Isotope
 $(window).load(function() {
@@ -147,3 +152,4 @@ $(window).load(function() {
         return false;
     });
 });
+

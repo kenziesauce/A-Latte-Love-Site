@@ -1,0 +1,47 @@
+.survey-text {
+	color: #d5c1a9;
+	font-size: 1.2em
+}
+.survey-label {
+	margin-right: 10px
+}
+.MyButton {
+   border-top: 1px solid #000000;
+   background: #683520;
+   background: -webkit-gradient(linear, left top, left bottom, from(#a66a53), to(#683520));
+   background: -webkit-linear-gradient(top, #a66a53, #683520);
+   background: -moz-linear-gradient(top, #a66a53, #683520);
+   background: -ms-linear-gradient(top, #a66a53, #683520);
+   background: -o-linear-gradient(top, #a66a53, #683520);
+   padding: 10px 20px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #faf7fa;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.MyButton:hover {
+   border-top-color: #866633;
+   background: #866633;
+   color: #f7f4f7;
+   }
+.MyButton:active {
+   border-top-color: #442419;
+   background: #442419;
+   } 
+.okThanks {
+	height: 100px;
+	width: 80%;
+	color: #d5c1a9;
+	background: #866633;
+	}
+.modal-body p {
+	color: black;
+	}
