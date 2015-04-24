@@ -27,7 +27,10 @@
 	<link rel="stylesheet" href="js/owl-carousel/owl.theme.css"/>
 	<link rel="stylesheet" href="js/owl-carousel/owl.transitions.css"/>
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link href="css/custom.css" rel="stylesheet">
+
+
 
 	<!-- Google Font & Icon Fonts -->
 	<link href="css/ico/style.css" rel="stylesheet">
@@ -67,8 +70,6 @@
 			<li><a href="#services" class="page-scroll">Survey <i class="fa fa-angle-right"></i></a></li>
 			<li><a href="#resume" class="page-scroll">FAQ <i class="fa fa-angle-right"></i></a></li>
 			<li><a href="#works" class="page-scroll">Reviews <i class="fa fa-angle-right"></i></a></li>
-			<!--<li><a href="#featured" class="page-scroll">Featured Works <i class="fa fa-angle-right"></i></a></li>-->
-			<!--<li><a href="#blog" class="page-scroll">Blog <i class="fa fa-angle-right"></i></a></li>-->
 			<li><a href="#contact-wrap" class="page-scroll">Contact <i class="fa fa-angle-right"></i></a></li>
 		</ul>
 	</nav>
@@ -95,19 +96,27 @@
 										<!--popup modal-->
 									<div id="registermodal" class="modal fade">
 										<div class="modal-dialog">
+
+
 											<div class="modal-content">
 												<div class="modal-header">
 													<h4 class="modal-title">A Latte Love</h4>
 												</div>
-												<div style="background-color: #683520;" class="modal-body modal-body-x modal-body-bg">
-													<img src="images/lattelove-bg.png">
+												<div class="modal-body modal-body-bg">
+													<div class="popupRregister">
+														<p>Give us a whole Latte Love<br>Take our Survey<br>& register for our site!</p>
+													</div>
 												</div>
 												<div class="modal-footer">
-													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-												</div>												
+													<button type="button" class="btn btn-primary" data-dismiss="modal">
+														<a href="#services" class="page-scroll">Take Survey <i class="fa fa-angle-right"></i></a>
+													</button>
+													<button type="button" class="btn btn-default" data-dismiss="modal">No Thanks</button>
+												</div>
 											</div>
 										</div>
 									</div>
+
 
 									<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 										<!-- Indicators -->
@@ -232,9 +241,12 @@
 								</div>
 								<div class="form-group form-inline">
 									<label for="fname" class="survey-label">First Name:</label>
-									<input type="text" class="form-control input-sm input-sm" id="fname" placeholder="jane">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="text" class="form-control input-sm inputspace" id="fname" placeholder="jane">
 									<label for="lname" class="survey-label">Last Name:</label>
-									<input type="text" class="form-control input-sm input-sm" id="lname" placeholder="doe">
+									<input type="text" class="form-control input-sm inputspace" id="lname" placeholder="doe">
+									<label for="day" class="survey-label ">Birthday:</label>
+									<input type="text" id="datepicker" id="day"class="form-control input-sm inputspace" placeholder="click to choose date">
+
 								</div>
 								<div class="form-group">
 									<label for="inputEmail3" class="survey-label">Email</label>
@@ -260,8 +272,8 @@
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 											<h4 class="modal-title" id="myModalLabel">Modal title</h4>
 										</div>
-										<div class="modal-body">
-											<div id="surveyAnswers">
+										<div class="modal-body modal-body-bg">
+											<div class="surveyAnswers">
 
 											</div>
 										</div>
@@ -563,6 +575,7 @@
 <script src="js/owl-carousel/owl.carousel.js"></script>
 <script src="js/plugin.js"></script>
 <script src="js/main.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/custom.js"></script>
 
 </body>

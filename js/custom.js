@@ -1,11 +1,14 @@
 $( document ).ready(function() {
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	});
 	
 	$( window ).load( function() {
 		var timer = $.timer(function() {
 					$('#registermodal').modal('show');
 					timer.stop();
 			});
-		timer.set({ time : 2000, autostart : true });
+		timer.set({ time : 60000, autostart : true });
 	});
 
 	$(':checkbox').on('change',function(){
@@ -49,29 +52,30 @@ $( document ).ready(function() {
                 minlength: "thats all? really?"
             }
         },
-        submitHandler: function(form) {
+		submitHandler: function(form) {
 			var ans = '<p>Thank you ';
 			ans += $('#fname').val();
-			ans += ' ';			
+			ans += ' ';
 			ans += $('#lname').val();
-			ans += ', Your Survey was accepted</p>';
-			ans += '<p>you prefer your coffee: ';
+			ans += ', Your Survey was accepted<br>';
+			ans += 'you prefer your coffee: ';
 			ans += $('input:radio[name=inlineRadioOptions]:checked').val();
-			ans += '  </p>';		
-			ans += '<p>You drink ';
+			ans += '<br> You drink ';
 			ans += $('#cupsSelector option:selected').text();
-			ans += ' cups of coffee per day: </p>';
+			ans += ' cups of coffee per day: <br>';
 			if ($('input:checkbox[name=chkMybox]:checked').val() == 1)
-				{
-					ans += '<p>You think 7-11 coffee is just fine</p>';
-				}
-			else if ($('input:checkbox[name=chkMybox]:checked').val() == 0)
-				{
-					ans += '<p>You think 7-11 coffee tastes like hot, black water!</p>';
-				}
-			ans += '<p>We will send a confirmation email to ';	
-			ans += $('#inputEmail3').val();
-			$('#surveyAnswers').html(ans);
+			{
+				ans += 'You think 7-11 coffee is just fine';
 			}
-		});
+			else
+			{
+				ans += 'You think 7-11 coffee tastes like hot, black water!';
+			}
+			ans += '<br>We will send a confirmation email to ';
+			ans += $('#inputEmail3').val();
+			ans += '</p>';
+			$('.surveyAnswers').html(ans);
+		}
+	});
+
 });
