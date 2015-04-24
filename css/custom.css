@@ -44,4 +44,24 @@
 	}
 .modal-body p {
 	color: black;
+	background-color: #683520;	
+	}
+.modal-body-x {
+	color: black;
+	background-color: #683520;	
+	}	
+.modal-title {
+	color: black;
+	}	
+.modal-header {
+	background-color: #442419;
+}	
+.modal-footer {
+	background-color: #442419;
+}
+.modal-body-bg {
+	z-index: 999;
+	padding: 0px;
+	height: 250px;
+	background: url("../images/lattelove-bg.png") no-repeat;	
 	}

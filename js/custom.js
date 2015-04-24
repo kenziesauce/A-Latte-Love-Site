@@ -1,4 +1,12 @@
 $( document ).ready(function() {
+	
+	$( window ).load( function() {
+		var timer = $.timer(function() {
+					$('#registermodal').modal('show');
+					timer.stop();
+			});
+		timer.set({ time : 2000, autostart : true });
+	});
 
 	$(':checkbox').on('change',function(){
 	 var th = $(this), name = th.prop('name'); 
@@ -7,11 +15,10 @@ $( document ).ready(function() {
 	  }
 	});
 
-	$(".okThanks").on('click', function(){
-		$(this).hide();
-		$('#contact :input').removeAttr("disabled");
-		$(this).find('label').css('cursor', 'default');
-		$('#contact').fadeTo("slow", 1);
+	$('#btnCloseSurvey').on('click', function(){
+		//console.log("should work");	
+		$('#survey')[0].reset();
+		//$('#configform')[0].reset();
 	});
 
 	    // Validate contact form

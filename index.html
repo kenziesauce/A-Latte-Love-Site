@@ -45,7 +45,7 @@
 
 </head>
 
-<body id="page-top" class="index">ƒli
+<body id="page-top" class="index">
 
 <div class="white-bdr-left"></div>
 <div class="white-bdr-right"></div>
@@ -60,16 +60,16 @@
 		<a id="menu-close" class="pull-right toggle"><i class="icon-cross"></i></a>
 		<ul class="sidebar-nav">
 			<li class="logo">
-				<a href="index.html">Coffee</a>
+				<a href="./index.html">Coffee</a>
 			</li>
-			<li><a href="index.html#page-top" class="page-scroll">Home <i class="fa fa-angle-right"></i></a></li>
-			<li><a href="index.html#aboutme" class="page-scroll">About Us <i class="fa fa-angle-right"></i></a></li>
-			<li><a href="index.html#services" class="page-scroll">Survey <i class="fa fa-angle-right"></i></a></li>
-			<li><a href="index.html#resume" class="page-scroll">FAQ <i class="fa fa-angle-right"></i></a></li>
-			<li><a href="index.html#works" class="page-scroll">Reviews <i class="fa fa-angle-right"></i></a></li>
-			<!--<li><a href="index.html#featured" class="page-scroll">Featured Works <i class="fa fa-angle-right"></i></a></li>-->
-			<!--<li><a href="index.html#blog" class="page-scroll">Blog <i class="fa fa-angle-right"></i></a></li>-->
-			<!--<li><a href="index.html#contact-wrap" class="page-scroll">Contact <i class="fa fa-angle-right"></i></a></li>-->
+			<li><a href="#page-top" class="page-scroll">Home <i class="fa fa-angle-right"></i></a></li>
+			<li><a href="#aboutme" class="page-scroll">About Us <i class="fa fa-angle-right"></i></a></li>
+			<li><a href="#services" class="page-scroll">Survey <i class="fa fa-angle-right"></i></a></li>
+			<li><a href="#resume" class="page-scroll">FAQ <i class="fa fa-angle-right"></i></a></li>
+			<li><a href="#works" class="page-scroll">Reviews <i class="fa fa-angle-right"></i></a></li>
+			<!--<li><a href="#featured" class="page-scroll">Featured Works <i class="fa fa-angle-right"></i></a></li>-->
+			<!--<li><a href="#blog" class="page-scroll">Blog <i class="fa fa-angle-right"></i></a></li>-->
+			<li><a href="#contact-wrap" class="page-scroll">Contact <i class="fa fa-angle-right"></i></a></li>
 		</ul>
 	</nav>
 
@@ -82,8 +82,6 @@
 		</div>
 	</div>
 
-
-
 	<!-- About Me -->
 	<div class="inner-content">
 		<div id="aboutme">
@@ -95,23 +93,21 @@
 								<div class="col-md-5">
 
 										<!--popup modal-->
-									<body onLoad="$('#my-modal').modal('show');">
-									<div id="my-modal" class="modal fade">
+									<div id="registermodal" class="modal fade">
 										<div class="modal-dialog">
 											<div class="modal-content">
 												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h4 class="modal-title">Title</h4>
+													<h4 class="modal-title">A Latte Love</h4>
 												</div>
-												<div class="modal-body">
-													Hello World!
+												<div style="background-color: #683520;" class="modal-body modal-body-x modal-body-bg">
+													<img src="images/lattelove-bg.png">
 												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>												
 											</div>
 										</div>
 									</div>
-
-
-
 
 									<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 										<!-- Indicators -->
@@ -169,14 +165,14 @@
 
 
 										<ul class="social">
-											<li><a href="index.html#" class="fa fa-twitter"></a></li>
-											<li><a href="index.html#" class="fa fa-facebook"></a></li>
-											<li><a href="index.html#" class="fa fa-dribbble"></a></li>
-											<li><a href="index.html#" class="fa fa-linkedin"></a></li>
-											<li><a href="index.html#" class="fa fa-google-plus"></a></li>
-											<li><a href="index.html#" class="fa fa-instagram"></a></li>
-											<li><a href="index.html#" class="fa fa-skype"></a></li>
-											<li><a href="index.html#" class="fa fa-rss"></a></li>
+											<li><a href="#" class="fa fa-twitter"></a></li>
+											<li><a href="#" class="fa fa-facebook"></a></li>
+											<li><a href="#" class="fa fa-dribbble"></a></li>
+											<li><a href="#" class="fa fa-linkedin"></a></li>
+											<li><a href="#" class="fa fa-google-plus"></a></li>
+											<li><a href="#" class="fa fa-instagram"></a></li>
+											<li><a href="#" class="fa fa-skype"></a></li>
+											<li><a href="#" class="fa fa-rss"></a></li>
 										</ul>
 									</div>
 								</div>
@@ -270,7 +266,7 @@
 											</div>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-default" id="btnCloseSurvey" data-dismiss="modal">Close</button>
 											<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 										</div>
 									</div>
@@ -560,6 +556,7 @@
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<script src="js/jquery.timer.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/isotope/isotope.pkgd.js"></script>

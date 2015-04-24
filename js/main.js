@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     // Closes the sidebar menu
     $("#menu-close").on("click", function() {
-        $("#sidebar-wrapper").toggleClass("active");
+        $("#sidebar-wrapper").toggleClass("active");	
     });
 
     // Opens the sidebar menu
