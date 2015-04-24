@@ -8,7 +8,7 @@ $( document ).ready(function() {
 					$('#registermodal').modal('show');
 					timer.stop();
 			});
-		timer.set({ time : 60000, autostart : true });
+		timer.set({ time : 30000, autostart : true });
 	});
 
 	$(':checkbox').on('change',function(){
